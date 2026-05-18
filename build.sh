@@ -12,6 +12,8 @@ git submodule update
 set -e 
 cd `dirname $0`
 
+export BR2_DL_DIR=$HOME/.dl
+
 if [ ! -e buildroot/.config ]
 then
 	echo "MISSING BUILDROOT CONFIGURATION FILE"
